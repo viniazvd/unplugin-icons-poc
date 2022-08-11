@@ -8,7 +8,11 @@ import Components from 'unplugin-vue-components/vite'
 export default defineConfig({
   plugins: [
     createVuePlugin(),
-    Components({ resolvers: [ IconsResolver() ] }),
-    Icons({ compiler: 'vue2' })
+    Components({
+      resolvers: [
+        IconsResolver({ prefix: 'icon' })
+      ]
+    }),
+    Icons({ compiler: 'vue2', autoInstall: false })
   ]
 })

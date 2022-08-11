@@ -1,18 +1,17 @@
 <template>
   <div id="app">
-    <i-mdi-dice-d12 />
+    <icon-mdi:facebook />
+    <icon-mdi:instagram />
 
-    <i-mdi:instagram />
-
-    <mdi-alarm-off v-if="showIcon" />
+    <!-- <mdi-alarm-off v-if="showIcon" /> -->
   </div>
 </template>
 
 <script>
 export default {
-  components: {
-    MdiAlarmOff: () => import('virtual:icons/mdi/alarm-off')
-  },
+  // components: {
+  //   MdiAlarmOff: () => import('virtual:icons/mdi/alarm-off')
+  // },
 
   data () {
     return {
