@@ -13,10 +13,10 @@
   },
   "devDependencies": {
     "@iconify-json/mdi": "^1.1.30",
-    "@vitejs/plugin-vue2": "^1.1.2",
     "unplugin-icons": "^0.14.8",
     "unplugin-vue-components": "^0.22.4",
     "vite": "^3.0.0",
+    "vite-plugin-vue2": "^2.0.2",
     "vue-template-compiler": "2.7"
   }
 }
