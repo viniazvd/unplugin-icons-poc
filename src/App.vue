@@ -3,15 +3,19 @@
     <icon-mdi:facebook />
     <icon-mdi:instagram />
 
-    <!-- <mdi-alarm-off v-if="showIcon" /> -->
+    <mdi-alarm-off v-if="showIcon" />
+
+    <s-icon icon="emojione:star" />
+    <s-icon icon="ci:circle-chevron-left" />
   </div>
 </template>
 
 <script>
 export default {
-  // components: {
-  //   MdiAlarmOff: () => import('virtual:icons/mdi/alarm-off')
-  // },
+  components: {
+    SIcon: () => import('./SIcon.vue'),
+    MdiAlarmOff: () => import('virtual:icons/mdi/alarm-off')
+  },
 
   data () {
     return {
